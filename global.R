@@ -3,7 +3,7 @@ library(shiny)
 library(shinydashboard)
 library(jsonlite)
 
-data.all = fromJSON("/Users/jimin/Desktop/cleanData.json")
+data.all = fromJSON("https://raw.githubusercontent.com/tanjimin/EpidemicVisualization/master/cleanData.json")
 data.all$playerID = as.factor(data.all$playerID)
 data.all$groupID = as.factor(data.all$groupID)
 data.all$gameIndex = as.factor(data.all$gameIndex)
